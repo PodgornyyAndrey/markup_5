@@ -50,3 +50,41 @@ table {
 }
 
 /*General settings*/
+body {
+	background: #fff url(../images/bg-body.png) repeat-x;
+	font: 12px/14px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*header*/
+
+#header {
+	height: 178px;
+	border: solid #d9d9d9;
+	border-width: 0 0 1px;
+}
+
+/*#header::after {
+	content: '';
+	display: block;
+	clear: both;
+}*/
+
+#logo {
+	float: left;
+	height: 125px;
+	width: 320px;
+	margin: 30px 0 0 30px;
+
+}
+
+#logo a{
+	background: url(../images/logo.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	height: 100%;
+}

@@ -1,6 +1,6 @@
 /*General reset*/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -169,7 +169,7 @@ body {
 }
 
 #nav-bar li:hover{
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(183,181,181,1) 50%,rgba(251,251,250,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(183,181,181,1) 50%,rgba(251,251,250,1) 100%);
 }
 
 /*add-bar*/
@@ -213,7 +213,8 @@ body {
 
 /*main*/
 #main {
-	padding: 27px 20px 0 30px;
+	padding: 25px 20px 25px 25px;
+	margin: 0 0 35px;
 }
 
 #twocolumn {
@@ -224,7 +225,7 @@ body {
 #aside {
 	float: right;
 	width: 250px;
-	padding: 3px 0 0 ;
+	padding: 5px 0 0 ;
 }
 
 .custom-form {
@@ -243,5 +244,172 @@ body {
 }
 
 /*content*/
-#content {
-	width: 700px;
+#tab-rent {
+	padding: 1px 20px 0 3px;
+	width: 572px;
+}
+
+.heading-holder {
+	margin: 0 0 27px;
+}
+
+.heading-holder p{
+	font-size:11px;
+	line-height: 13px;
+	color: #5e5e5e;
+}
+
+.heading-holder h1{
+	color: #c00;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.offer-holder {
+	padding: 0 0 0 2px;
+	margin: 0 0 23px;
+}
+
+.offer {
+	border:1px solid #ccc;
+	background: #fff url(../images/bg-offer.gif) repeat-x 0 0;
+	border-radius: 7px;
+	padding: 19px;
+}
+
+.offer ul {
+	overflow: hidden;
+}
+
+.offer li {
+	width: 160px;
+	float: left;
+	display: inline-block;
+	margin: 0 0 0 25px;
+}
+
+.offer li:first-child {
+	margin: 0;
+}
+
+.offer .sup {
+	position: relative;
+	top: -1px;
+	left: 0;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.offer-img {
+	padding: 0 0 7px;
+}
+
+.offer img {
+	border: 0;
+	vertical-align: top;
+}
+
+.text-holder {
+	text-align: center;
+}
+
+.text-holder h3 {
+	padding: 0 0 1px;
+}
+
+.text-holder a {
+	color: #c00;
+	font: 12px/17px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.text-holder a:hover {
+	text-decoration:underline;
+}
+
+.text-holder {
+	padding: 0 0 0 0;
+}
+
+#list-holder {
+	overflow: hidden;
+}
+
+.list {
+	float: left;
+	padding: 0 1px;
+	margin: 0 0 0 41px;
+}
+
+.list:first-child {
+	margin: 0;
+}
+
+.list h2 {
+	color: #c00;
+	font: bold 15px/18px "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0 0 14px;
+}
+
+.list ul {
+	padding: 0 2px;
+}
+
+.list li {
+	background: url(../images/bg-spot.gif) no-repeat 0 6px;
+	padding: 0 0 0 9px;
+}
+
+.list a {
+	text-decoration: none;
+	color: #000;
+	font: 12px/17px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.list a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*footer*/
+#footer {
+	text-align: center;
+	width: 100%;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#sub-nav {
+	display: inline-block;
+	margin: 0 0 10px;
+}
+
+#sub-nav ul {
+	overflow: hidden;
+}
+
+#sub-nav li {
+	background: url(../images/bg-spot-footer.gif) no-repeat 0 6px;
+	float: left;
+	padding: 0 8px;
+}
+
+#sub-nav li:first-child {
+	background: none;
+}
+
+#sub-nav a {
+
+	text-decoration: none;
+	color: #000;
+}
+
+#sub-nav a:hover {
+	text-decoration: underline;
+}
+
+#info {
+
+}

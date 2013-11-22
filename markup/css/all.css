@@ -1,6 +1,6 @@
 /*General reset*/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -50,3 +50,366 @@ table {
 }
 
 /*General settings*/
+body {
+	background: #fff url(../images/bg-body.png) repeat-x;
+	font: 12px/14px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*header*/
+#header {
+	height: 178px;
+	border: solid #d9d9d9;
+	border-width: 0 0 1px;
+}
+
+#logo {
+	float: left;
+	height: 125px;
+	width: 320px;
+	margin: 30px 0 0 30px;
+}
+
+#logo a{
+	background: url(../images/logo.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	height: 100%;
+}
+
+/*text-info*/
+#text-info {
+	float: right;
+	/*width: 400px;*/		/*нужна ли ширина?*/
+	margin: 78px 39px 0 0;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+/*contact panel*/
+.contact-panel{
+	width: 170px;
+	float:right;
+	padding: 6px 10px 0;
+}
+
+.contact-panel ul {
+	overflow: hidden;
+}
+
+.contact-panel li {
+	float: left;
+	background:url(../images/sep-phone.gif) no-repeat 0 2px;
+	padding: 0 5px 0;
+}
+
+.contact-panel li:first-child {
+	background: none;
+	padding: 0 5px 0 0;
+}
+
+.contact-panel span {
+	font-weight: bold;
+}
+
+.contact-panel a {
+	color: #c00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contact-panel a:hover {
+	text-decoration: underline;
+}
+
+/*address-panel*/
+#address-line {
+	float: right;
+	background: url(../images/sep-info.gif) no-repeat 100% 0;
+	width: 190px;
+	padding: 2px 0 0;
+	height: 37px;		/*lose rubber block*/
+}
+
+.address-panel {
+	text-align: right;
+	padding: 0 10px 0;
+}
+
+.sup {
+	vertical-align: 4px;
+}
+
+/*nav-bar*/
+#nav-bar {
+	clear: both;
+	overflow: hidden;
+	padding: 0 25px 0 25px;
+}
+
+#nav-bar li{
+	background: -webkit-linear-gradient(top, rgba(236,236,236,1) 0%,rgba(252,252,252,1) 50%,rgba(234,234,234,1) 100%); /* Chrome10+,Safari5.1+ */
+	border: solid #d7d7d7;
+	border-radius: 7px 7px 0 0;
+	border-width: 1px 1px 0;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+#nav-bar a{
+	font:12px/22px "Trebuchet MS", Helvetica, sans-serif;
+	display: inline-block;
+	height: 100%;
+	text-decoration: none;
+}
+
+#nav-bar li:hover{
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(183,181,181,1) 50%,rgba(251,251,250,1) 100%);
+}
+
+/*add-bar*/
+#add-bar {
+	float: right;
+}
+
+#add-bar ul {
+	overflow: hidden;
+}
+
+#add-bar li {
+	float: right;
+	min-width: 88px;
+}
+
+#add-bar a {
+	color: #000;
+	padding: 0 10px;
+}
+
+#main-nav {
+	width: 550px;
+	overflow: hidden;
+}
+
+#main-nav ul {
+	overflow: hidden;
+	float: left;
+}
+
+#main-nav li {
+	float: left;
+	min-width: 117px;
+}
+
+#main-nav a{
+	font-size:15px;
+	color: #c00;
+}
+
+/*main*/
+#main {
+	padding: 25px 20px 25px 25px;
+	margin: 0 0 35px;
+}
+
+#twocolumn {
+	overflow: hidden;
+	width: 100%;
+}
+
+#aside {
+	float: right;
+	width: 250px;
+	padding: 5px 0 0 ;
+}
+
+.custom-form {
+	background: #ededed;
+	border: 1px solid #ccc;
+	border-radius:6px;
+	height: 262px;		/*Remove after creating a custom-form*/
+	margin: 0 0 30px;
+}
+
+.box {
+	height: 198px;
+	background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	border: 1px solid #ccc;
+	border-radius: 7px;
+}
+
+/*content*/
+#tab-rent {
+	padding: 1px 20px 0 3px;
+	width: 572px;
+}
+
+.heading-holder {
+	margin: 0 0 27px;
+}
+
+.heading-holder p{
+	font-size:11px;
+	line-height: 13px;
+	color: #5e5e5e;
+}
+
+.heading-holder h1{
+	color: #c00;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.offer-holder {
+	padding: 0 0 0 2px;
+	margin: 0 0 23px;
+}
+
+.offer {
+	border:1px solid #ccc;
+	background: #fff url(../images/bg-offer.gif) repeat-x 0 0;
+	border-radius: 7px;
+	padding: 19px;
+}
+
+.offer ul {
+	overflow: hidden;
+}
+
+.offer li {
+	width: 160px;
+	float: left;
+	display: inline-block;
+	margin: 0 0 0 25px;
+}
+
+.offer li:first-child {
+	margin: 0;
+}
+
+.offer .sup {
+	position: relative;
+	top: -1px;
+	left: 0;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.offer-img {
+	padding: 0 0 7px;
+}
+
+.offer img {
+	border: 0;
+	vertical-align: top;
+}
+
+.text-holder {
+	text-align: center;
+}
+
+.text-holder h3 {
+	padding: 0 0 1px;
+}
+
+.text-holder a {
+	color: #c00;
+	font: 12px/17px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.text-holder a:hover {
+	text-decoration:underline;
+}
+
+.text-holder {
+	padding: 0 0 0 0;
+}
+
+#list-holder {
+	overflow: hidden;
+}
+
+.list {
+	float: left;
+	padding: 0 1px;
+	margin: 0 0 0 41px;
+}
+
+.list:first-child {
+	margin: 0;
+}
+
+.list h2 {
+	color: #c00;
+	font: bold 15px/18px "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0 0 14px;
+}
+
+.list ul {
+	padding: 0 2px;
+}
+
+.list li {
+	background: url(../images/bg-spot.gif) no-repeat 0 6px;
+	padding: 0 0 0 9px;
+}
+
+.list a {
+	text-decoration: none;
+	color: #000;
+	font: 12px/17px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.list a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*footer*/
+#footer {
+	text-align: center;
+	width: 100%;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#sub-nav {
+	display: inline-block;
+	margin: 0 0 10px;
+}
+
+#sub-nav ul {
+	overflow: hidden;
+}
+
+#sub-nav li {
+	background: url(../images/bg-spot-footer.gif) no-repeat 0 6px;
+	float: left;
+	padding: 0 8px;
+}
+
+#sub-nav li:first-child {
+	background: none;
+}
+
+#sub-nav a {
+
+	text-decoration: none;
+	color: #000;
+}
+
+#sub-nav a:hover {
+	text-decoration: underline;
+}
+
+#info {
+
+}

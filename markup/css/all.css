@@ -235,9 +235,8 @@ body {
 	background: #ededed;
 	border: 1px solid #ccc;
 	border-radius:6px;
-	height: 262px;		/*Remove after creating a custom-form*/
 	margin: 0 0 30px;
-	padding: 14px 20px 0 19px;
+	padding: 14px 20px 20px 19px;
 	font: 12px/14px "Trebuchet MS", Helvetica, sans-serif;
 
 }
@@ -255,46 +254,31 @@ body {
 	margin: 0 0 5px;
 }
 
+.last-row {
+	margin:0 0 5px;
+}
+
 .custom-form label {
 	float: left;
 	width: 79px;
 	padding: 4px 0 0;
 }
 
-/*.selectArea {
-	position: relative;
+.button {
+	text-align: center;
+	margin: 0 0 0 18px;
 }
 
-.selectArea .left{
-	position: absolute;
-	background: url(../images/bg-select-left.png) no-repeat;
-	height: 23px;
-	width: 8px;
-}
-
-.selectArea .disable {
-	display: none;
-}
-
-.selectArea #mySelectText0{
-	background: url(../images/bg-select-center.png) repeat-x;
+.button input {
 	line-height: 23px;
-	padding: 0 23px 0 8px;
-	display: block;
-	overflow: hidden;
+	height: 23px;
+	background: url(../images/bg-form-button.gif) repeat-x;
+	border: 1px solid #cacaca;
+	border-radius: 3px;
+	padding: 0 12px;
 	color: #5e5e5e;
 }
 
-.selectArea .selectButton{
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: url(../images/bg-select-right.png) no-repeat 100% 0;
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
-
-}*/
 
 /*box block*/
 .box {

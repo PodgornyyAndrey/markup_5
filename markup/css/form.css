@@ -9,7 +9,7 @@
 	width:17px;
 	height:17px;
 	margin:2px 0 0 0;
-	background:url(../images/bg-radio.gif) no-repeat;
+	background:url(../images/) no-repeat;
 	overflow:hidden;
 }
 .radioAreaChecked {background-position:0 -17px;}
@@ -19,13 +19,13 @@
 	float:left;
 	width:17px;
 	height:17px;
-	margin:2px 0 0 0;
+	margin:3px 0 0 0;
 	overflow:hidden;
-	background:url(../images/bg-checkbox.gif) no-repeat;
+	background:url(../images/bg-radioButton.gif) no-repeat;
 }
 .checkboxAreaChecked {background-position:0 -17px;}
 .radioAreaCheckedLabel,
-.checkboxAreaCheckedLabel {color:#f00;}
+.checkboxAreaCheckedLabel {color:#000;}
 /* selects */
 .selectArea {
 	position:relative;

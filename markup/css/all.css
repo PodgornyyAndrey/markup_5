@@ -241,7 +241,58 @@ body {
 	background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
 	border: 1px solid #ccc;
 	border-radius: 7px;
+	padding: 0 19px;
 }
+
+.box h2 {
+	text-indent: -9999px;
+	background: url(../images/box-header.png) no-repeat;
+	height: 35px;
+	margin: 14px 0 6px 0;
+}
+
+.box-image {
+	float: right;
+	padding: 3px 0 0;
+	width: 110px;
+	overflow: hidden;
+}
+
+.box-image img {
+	margin: 0 0 22px;
+}
+
+.btn-mas_info {
+	float: right;
+	font: 10px/12px "Trebuchet MS", Helvetica, sans-serif;
+	background: -webkit-linear-gradient(top, rgba(236,236,236,1) 0%,rgba(252,252,252,1) 50%,rgba(234,234,234,1) 100%); /* Chrome10+,Safari5.1+ */
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	color: #5e5e5e;
+	line-height: 16px;
+	padding: 0 10px;
+	outline: none;
+}
+
+.btn-mas_info:hover {
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(183,181,181,1) 50%,rgba(251,251,250,1) 100%);
+}
+
+
+.box-text {
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 0 5px 0 0;
+}
+
+
+.box-text h3{
+	color: #c00;
+	margin: 0 0 3px;
+}
+
 
 /*content*/
 #tab-rent {
@@ -379,11 +430,12 @@ body {
 	width: 100%;
 	font-size: 10px;
 	line-height: 12px;
+	padding: 0 0 15px;
 }
 
 #sub-nav {
 	display: inline-block;
-	margin: 0 0 10px;
+	margin: 0 0 5px;
 }
 
 #sub-nav ul {
@@ -411,5 +463,20 @@ body {
 }
 
 #info {
+	text-align: center;
+}
 
+#info ul {
+	overflow: hidden;
+	display: inline-block;
+}
+
+#info li {
+	float: left;
+	background: url(../images/bg-spot-footer.gif) no-repeat 0 5px;
+	padding: 0 7px 0 8px;
+}
+
+#info li:first-child{
+	background: none;
 }

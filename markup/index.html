@@ -5,6 +5,9 @@
 	<title>asFontesinmobiliara</title>
 	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
 	<link media="all" rel="stylesheet" type="text/css" href="css/form.css" />
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.accordion.js"></script>
 	<script type="text/javascript" src="js/form.js"></script>
 </head>
 <body>
@@ -38,13 +41,12 @@
 						<li><a href="#11">quienes somos</a></li>
 					</ul>
 				</div>
-
 				<div id="main-nav">
-					<ul>
-						<li><a href="#tab-rent">alquilar</a></li>
-						<li><a href="#tab-buy">comprar</a></li>
-						<li><a href="#tab-sell">vender</a></li>
-						<li><a href="#tab-construction">obra nueva</a></li>
+					<ul class="tabset">
+						<li><a href="#tab-rent" class="tab active">alquilar</a></li>
+						<li><a href="#tab-buy" class="tab">comprar</a></li>
+						<li><a href="#tab-sell" class="tab">vender</a></li>
+						<li><a href="#tab-construction" class="tab">obra nueva</a></li>
 					</ul>
 				</div>
 
@@ -231,8 +233,59 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab" id="tab-buy"></div>
-				<div class="tab" id="tab-sell"></div>
+				<div class="tab" id="tab-buy">
+					<div class="heading">
+						<h1>Accordion</h1>
+					</div>
+					<div >
+						<ul class="simple-accordion">
+							<li class="active">
+								<a href="#" class="opener">Level 1</a>
+								<div class="slide">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+								</div>
+							</li>
+							<li class="">
+								<a href="#" class="opener">Level 2</a>
+								<div class="slide">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, harum, cupiditate, rem, magnam iure odit molestiae dolore tenetur architecto dicta eligendi assumenda consectetur tempora soluta porro voluptas eaque minima ea.</p>
+								</div>
+							</li>
+							<li class="">
+								<a href="#" class="opener">Level 3</a>
+								<div class="slide">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt tenetur nam beatae ab? Tempore, nemo voluptatum doloremque esse veritatis illum consectetur quas voluptatem repudiandae fuga eos obcaecati tempora. Praesentium.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab" id="tab-sell">
+					<h1>There will be an carusel here</h1>
+				</div>
 				<div class="tab" id="tab-construction"></div>
 			</div>
 		</div>
@@ -253,7 +306,7 @@
 			<div id="info">
 				<ul>
 					<li>copyright &copy; 2008 as fontes inmobiliaria</li>
-					<li></li>
+					<li>desarollado por mAs impacto networks</li>
 				</ul>
 			</div>
 		</div>

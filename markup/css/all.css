@@ -209,6 +209,7 @@ body {
 #main-nav a{
 	font-size:15px;
 	color: #c00;
+	display: block;
 }
 
 /*main*/
@@ -518,10 +519,47 @@ body {
 
 #info li {
 	float: left;
-	background: url(../images/bg-spot-footer.gif) no-repeat 0 5px;
+	background: url(../images/bg-spot-footer.gif) no-repeat 0 4px;
 	padding: 0 7px 0 8px;
 }
 
 #info li:first-child{
 	background: none;
+}
+
+/*tab-buy - accordion*/
+#tab-buy {
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.heading h1{
+	color: #c00;
+	text-align: center;
+	font: 26px/30px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0 10px;
+}
+
+.simple-accordion li {
+	line-height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.simple-accordion li a{
+	background: -webkit-linear-gradient(top, rgba(210,210,210,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	display: block;
+	font: 20px/22px "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	color: #717C92;
+}
+
+.simple-accordion p {
+	line-height: 16px;
+	text-align: left;
+	text-indent: 15px;
 }

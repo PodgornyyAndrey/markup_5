@@ -228,14 +228,75 @@ body {
 	padding: 5px 0 0 ;
 }
 
+
+
+/*custom form*/
 .custom-form {
 	background: #ededed;
 	border: 1px solid #ccc;
 	border-radius:6px;
 	height: 262px;		/*Remove after creating a custom-form*/
 	margin: 0 0 30px;
+	padding: 14px 20px 0 19px;
+	font: 12px/14px "Trebuchet MS", Helvetica, sans-serif;
+
 }
 
+.custom-form h2{
+	text-indent: -9996px;
+	background: url(../images/bg-form-head.png) no-repeat;
+	height: 35px;
+	margin: 0 0 3px;
+}
+
+.row {
+	height: 23px;
+	overflow: hidden;
+	margin: 0 0 5px;
+}
+
+.custom-form label {
+	float: left;
+	width: 79px;
+	padding: 4px 0 0;
+}
+
+/*.selectArea {
+	position: relative;
+}
+
+.selectArea .left{
+	position: absolute;
+	background: url(../images/bg-select-left.png) no-repeat;
+	height: 23px;
+	width: 8px;
+}
+
+.selectArea .disable {
+	display: none;
+}
+
+.selectArea #mySelectText0{
+	background: url(../images/bg-select-center.png) repeat-x;
+	line-height: 23px;
+	padding: 0 23px 0 8px;
+	display: block;
+	overflow: hidden;
+	color: #5e5e5e;
+}
+
+.selectArea .selectButton{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/bg-select-right.png) no-repeat 100% 0;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+
+}*/
+
+/*box block*/
 .box {
 	height: 198px;
 	background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */

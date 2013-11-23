@@ -1,0 +1,104 @@
+.outtaHere {
+	position:absolute;
+	left:-9999px;
+}
+/* radio buttons */
+.radioArea,
+.radioAreaChecked {
+	float:left;
+	width:17px;
+	height:17px;
+	margin:2px 0 0 0;
+	background:url(../images/bg-radio.gif) no-repeat;
+	overflow:hidden;
+}
+.radioAreaChecked {background-position:0 -17px;}
+/* checkboxes */
+.checkboxArea,
+.checkboxAreaChecked {
+	float:left;
+	width:17px;
+	height:17px;
+	margin:2px 0 0 0;
+	overflow:hidden;
+	background:url(../images/bg-checkbox.gif) no-repeat;
+}
+.checkboxAreaChecked {background-position:0 -17px;}
+.radioAreaCheckedLabel,
+.checkboxAreaCheckedLabel {color:#f00;}
+/* selects */
+.selectArea {
+	position:relative;
+	height:23px;
+	float:left;
+	color:#000;
+	font-size:12px;
+	line-height:23px;
+	width:130px;
+}
+
+.selectArea .left {
+	position:absolute;
+	top:0;
+	left:0;
+	width:19px;
+	height:100%;
+	background:url(../images/bg-select-left.png) no-repeat;
+}
+.selectArea .selectButton {
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+	background:url(../images/bg-select-right.png) no-repeat 100% 0;
+}
+.selectArea .center {
+	color:#5e5e5e;
+	display:block;
+	height:23px;
+	line-height:23px;
+	padding:0 25px 0 8px;
+	background:url(../images/bg-select-center.png) repeat-x;
+}
+.selectArea .center img {float:left;}
+/* selects drop-down */
+.optionsDivInvisible,
+.optionsDivVisible {
+	position:absolute;
+	z-index:30;
+	font-size:12px;
+}
+.optionsDivInvisible {display:none;}
+.select-center-right { display:none; }
+.optionsDivVisible ul {
+	margin:0;
+	padding:2px;
+	overflow:hidden;
+	list-style:none;
+	background-color:#fdfdfd;
+	border:1px solid #bebebe;
+	width: 124px;
+}
+.optionsDivVisible ul li {
+	height:1%;
+	overflow:hidden;
+	vertical-align:top;
+}
+.optionsDivVisible a {
+	color:#5e5e5e;
+	overflow:hidden;
+	text-decoration:none;
+	display:block;
+	height:1%;
+	padding:2px 4px;
+}
+.optionsDivVisible a img {float:left;}
+.optionsDivVisible a:hover {
+	background-color:#5e5e5e;
+	color:#fff;
+	text-decoration:none;
+}
+/*
+* html .radioArea, .radioAreaChecked {margin:1px 0 0 0;}
+*/

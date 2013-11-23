@@ -4,7 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>asFontesinmobiliara</title>
 	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
-	<script type="text/javascript" src="js/main.js"></script>
+	<link media="all" rel="stylesheet" type="text/css" href="css/form.css" />
+	<script type="text/javascript" src="js/form.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -56,8 +57,73 @@
 				<!-- ASIDE -->
 				<div id="aside">
 					<form action="#" class="custom-form">
+						<h2>buscador</h2>
 						<fieldset>
-
+							<div class="row">
+								<label for="operation">Operación:</label>
+								<div class="selectArea" id="sarea0">
+									<span class="left"></span>
+									<span class="disable"></span>
+									<span id="mySelectText0" class="center">Alquilar</span>
+									<a href="javascript:showOptions(0,false)" class="selectButton"></a>
+								</div>
+								<select name="" id="operation" class="outtaHere	">
+									<option value="">Alquilar</option>
+								</select>
+							</div>
+							<div class="row">
+								<label for="tipo">Tipo:</label>
+								<div class="selectArea" id="sarea1">
+									<span class="left"></span>
+									<span class="disable"></span>
+									<span id="mySelectText1" class="center">Cualquiera</span>
+									<a href="javascript:showOptions(1,false)" class="selectButton"></a>
+								</div>
+								<select name="" id="tipo" class="outtaHere	">
+									<option value="">Alquilar</option>
+								</select>
+							</div>
+							<div class="row">
+								<label for="superficie">Superficie:</label>
+								<div class="selectArea" id="sarea2">
+									<span class="left"></span>
+									<span class="disable"></span>
+									<span id="mySelectText0" class="center">Cualquiera</span>
+									<a href="javascript:showOptions(2,false)" class="selectButton"></a>
+								</div>
+								<select name="" id="superficie" class="outtaHere">
+									<option value="">Alquilar</option>
+									<option value="">Cualquiera</option>
+								</select>
+							</div>
+							<div class="row">
+								<label for="dormitorios">Dormitorios:</label>
+								<div class="selectArea" id="sarea3">
+									<span class="left"></span>
+									<span class="disable"></span>
+									<span id="mySelectText0" class="center">0</span>
+									<a href="javascript:showOptions(3,false)" class="selectButton"></a>
+								</div>
+								<select name="" id="dormitorios" class="outtaHere">
+									<option value="">0</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+							</div>
+							<div class="row">
+								<label for="precio">Precio:</label>
+								<div class="selectArea" id="sarea4">
+									<span class="left"></span>
+									<span class="disable"></span>
+									<span id="mySelectText4" class="center">Cualquier precio</span>
+									<a href="javascript:showOptions(4,false)" class="selectButton"></a>
+								</div>
+								<select name="" id="precio" class="outtaHere">
+									<option value="">Cualquier precio</option>
+									<option value="">Cualquier precio_1</option>
+								</select>
+							</div>
 						</fieldset>
 					</form>
 					<div class="box">

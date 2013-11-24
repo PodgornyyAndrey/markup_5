@@ -84,7 +84,7 @@ body {
 /*text-info*/
 #text-info {
 	float: right;
-	/*width: 400px;*/		/*нужна ли ширина?*/
+	width: 450px;
 	margin: 78px 39px 0 0;
 	font-size: 10px;
 	line-height: 12px;
@@ -192,7 +192,6 @@ body {
 }
 
 #main-nav {
-	width: 550px;
 	overflow: hidden;
 }
 
@@ -216,11 +215,11 @@ body {
 #main {
 	padding: 25px 20px 25px 25px;
 	margin: 0 0 35px;
+	overflow: hidden;
 }
 
-#twocolumn {
+#content {
 	overflow: hidden;
-	width: 100%;
 }
 
 #aside {
@@ -230,9 +229,8 @@ body {
 }
 
 
-
 /*custom form*/
-.custom-form {
+.form-holder {
 	background: #ededed;
 	border: 1px solid #ccc;
 	border-radius:6px;
@@ -242,7 +240,7 @@ body {
 
 }
 
-.custom-form h2{
+.form-holder h2{
 	text-indent: -9996px;
 	background: url(../images/bg-form-head.png) no-repeat;
 	height: 35px;
@@ -253,6 +251,10 @@ body {
 	height: 23px;
 	overflow: hidden;
 	margin: 0 0 5px;
+}
+
+.row select {
+	width: 125px;
 }
 
 .last-row {
@@ -278,6 +280,7 @@ body {
 	border-radius: 3px;
 	padding: 0 12px;
 	color: #5e5e5e;
+	outline: none;
 }
 
 
@@ -288,6 +291,7 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 7px;
 	padding: 0 19px;
+	margin: 0 0 15px;
 }
 
 .box h2 {
@@ -301,26 +305,36 @@ body {
 	float: right;
 	padding: 3px 0 0;
 	width: 110px;
-	overflow: hidden;
 }
 
-.box-image img {
-	margin: 0 0 22px;
+.image-holder{
+	margin: 0 0 21px;
 }
 
-.btn-mas_info {
+.image-holder img {
+	vertical-align: top;
+}
+
+.button-info {
+	width: 59px;
+	height: 16px;
 	float: right;
-	font: 10px/12px "Trebuchet MS", Helvetica, sans-serif;
 	background: -webkit-linear-gradient(top, rgba(236,236,236,1) 0%,rgba(252,252,252,1) 50%,rgba(234,234,234,1) 100%); /* Chrome10+,Safari5.1+ */
 	border: 1px solid #d9d9d9;
 	border-radius: 3px;
-	color: #5e5e5e;
-	line-height: 16px;
-	padding: 0 10px;
-	outline: none;
 }
 
-.btn-mas_info:hover {
+.button-info a{
+	text-align: center;
+	font: 10px/12px "Trebuchet MS", Helvetica, sans-serif;
+	line-height: 16px;
+	color: #5e5e5e;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+.button-info a:hover {
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(183,181,181,1) 50%,rgba(251,251,250,1) 100%);
 }
 
@@ -343,7 +357,6 @@ body {
 /*content*/
 #tab-rent {
 	padding: 1px 20px 0 3px;
-	width: 572px;
 }
 
 .heading-holder {
@@ -426,36 +439,39 @@ body {
 }
 
 .text-holder {
-	padding: 0 0 0 0;
+	padding: 0;
 }
 
-#list-holder {
+/*list-holder*/
+.list-holder {
 	overflow: hidden;
 }
 
-.list {
+.list-holder li {
 	float: left;
-	padding: 0 1px;
+	padding: 0 3px;
 	margin: 0 0 0 41px;
 }
 
-.list:first-child {
+.list-holder li:first-child {
 	margin: 0;
 }
 
-.list h2 {
+.list-holder h2 {
 	color: #c00;
 	font: bold 15px/18px "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0 0 14px;
 }
 
-.list ul {
-	padding: 0 2px;
+.list {
+	overflow: hidden;
 }
 
 .list li {
 	background: url(../images/bg-spot.gif) no-repeat 0 6px;
 	padding: 0 0 0 9px;
+	clear: both;
+	margin:0;
 }
 
 .list a {
@@ -479,32 +495,32 @@ body {
 	padding: 0 0 15px;
 }
 
-#sub-nav {
+.sub-nav {
 	display: inline-block;
 	margin: 0 0 5px;
 }
 
-#sub-nav ul {
+.sub-nav ul {
 	overflow: hidden;
 }
 
-#sub-nav li {
-	background: url(../images/bg-spot-footer.gif) no-repeat 0 6px;
+.sub-nav li {
+	background: url(../images/bg-spot-footer.gif) no-repeat 0 4px;
 	float: left;
 	padding: 0 8px;
 }
 
-#sub-nav li:first-child {
+.sub-nav li:first-child {
 	background: none;
 }
 
-#sub-nav a {
+.sub-nav a {
 
 	text-decoration: none;
 	color: #000;
 }
 
-#sub-nav a:hover {
+.sub-nav a:hover {
 	text-decoration: underline;
 }
 
@@ -575,60 +591,101 @@ body {
 	overflow: hidden;
 }
 
+
+
+
+
+/* example gallery styles */
 .gallery-holder {
+	border: 1px solid #888;
+	background: ##008040;
+	padding: 15px;
+}
+.gallery-holder h2 {
+	margin: 0 0 5px;
+}
+.gallery-holder .gholder {
 	width: 100%;
 }
-
-.gallery{
-	overflow: hidden;
+.gallery-holder .gholder:after {
+	content:"";
+	display:block;
+	clear:both;
 }
-
-.btn-prev {
+.gallery-holder .gmask-center {
+	margin: 0 25px;
+}
+.gallery-holder .gmask {
+	border: 1px solid #888;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	width: 100%;
 	float: left;
-	width: 50px;
-	height: 20px;
-	background: #0a0;
 }
-
-.btn-next {
-	float: right;
-	width: 50px;
-	height: 20px;
-	background: #0a0;
+.gallery-holder .gmask ul {
+	list-style: none;
+	width: 99999px;
+	float: left;
+	padding: 0;
+	margin: 0;
 }
-
-.gmask-center:after{
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.gmask {
-	height: 427px;
-	overflow: hidden;
-}
-
-.gmask ul {
-	height: 2135px;
-}
-
-.gmask ul li{
-	float: none;
-	width: auto !important;
-}
-
-.gmask img {
-	display: inline-block;
-}
-
-.pagination {
-	overflow: hidden;
-}
-
-.pagination ul {
+.gallery-holder .gmask ul li {
+	white-space: nowrap;
+	float: left;
+	font-size: 60px;
+	line-height: 100px;
 	text-align: center;
+	width: 640px;
+	height: 427px;
 }
+.gallery-holder .gmask .c1 {background: #fee;}
+.gallery-holder .gmask .c2 {background: #efe;}
+.gallery-holder .gmask .c3 {background: #eef;}
+.gallery-holder .gmask .c4 {background: #ffe;}
+.gallery-holder .gmask .c5 {background: #fef;}
 
-.pagination ul li {
+.gallery-holder a.btn-prev,
+.gallery-holder a.btn-next {
+	border: 1px solid #888;
+	font-weight: bold;
+	background: #fff;
+	text-align: center;
+	color: #000;
+	font-size: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	float: left;
+	width: 30px;
+	margin: 35px 10px 0 0;
+	height: 30px;
+}
+.gallery-holder a.btn-next {
+	margin: 35px 0 0 10px;
+	float: right;
+}
+.gallery-holder .pagination ul{
+	font-weight: bold;
+	list-style: none;
+	text-align: center;
+	padding: 5px 0;
+	margin: 0;
+}
+.gallery-holder .pagination ul li {
+	padding: 0 5px;
 	display: inline;
 }
+.gallery-holder .pagination a {
+	text-decoration: none;
+	color: #00f;
+}
+.gallery-holder .pagination .active a {
+	color: #f00;
+}
+.gallery-holder a.disabled {
+	border-color: #eee;
+	color: #eee;
+}
+.gallery-holder .pagination a:hover,
+.gallery-holder a.btn-prev:hover,
+.gallery-holder a.btn-next:hover {text-decoration:none;}

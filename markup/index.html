@@ -8,8 +8,16 @@
 	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.accordion.js"></script>
 	<script type="text/javascript" src="js/jquery.carousel.js"></script>
-	<script type="text/javascript" src="js/form.js"></script>
+	<script src="js/jcf.js" type="text/javascript"></script>
+	<script src="js/jcf.select.js" type="text/javascript"></script>
+	<script src="js/jcf.checkbox.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+			// заменить все кастомные элементы когда страница будет загружена
+			jcf.lib.domReady(function(){
+				jcf.customForms.replaceAll();
+			});
+		</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -55,101 +63,86 @@
 		</div>
 		<!-- MAIN  -->
 		<div id="main">
-		<!-- TWOCOLUMN -->
-			<div id="twocolumn">
-				<!-- ASIDE -->
-				<div id="aside">
-					<form action="#" class="custom-form">
+			<!-- ASIDE -->
+			<div id="aside">
+					<div class="form-holder">
 						<h2>buscador</h2>
+						<form action="#" class="custom-form">
 						<fieldset>
 							<div class="row">
 								<label for="operation">Operación:</label>
-								<div class="selectArea" id="sarea0">
-									<span class="left"></span>
-									<span class="disable"></span>
-									<span id="mySelectText0" class="center">Alquilar</span>
-									<a href="javascript:showOptions(0,false)" class="selectButton"></a>
-								</div>
-								<select name="" id="operation" class="outtaHere	">
-									<option value="">Alquilar</option>
+								<select id="operation">
+									<option>Alquilar0</option>
+									<option>Alquilar1</option>
+									<option>Alquilar2</option>
+									<option>Alquilar3</option>
+									<option>Alquilar4</option>
 								</select>
 							</div>
 							<div class="row">
 								<label for="tipo">Tipo:</label>
-								<div class="selectArea" id="sarea1">
-									<span class="left"></span>
-									<span class="disable"></span>
-									<span id="mySelectText1" class="center">Cualquiera</span>
-									<a href="javascript:showOptions(1,false)" class="selectButton"></a>
-								</div>
-								<select name="" id="tipo" class="outtaHere	">
-									<option value="">Alquilar</option>
+								<select id="tipo">
+									<option>Alquilar0</option>
+									<option>Alquilar1</option>
+									<option>Alquilar2</option>
+									<option>Alquilar3</option>
 								</select>
 							</div>
 							<div class="row">
 								<label for="superficie">Superficie:</label>
-								<div class="selectArea" id="sarea2">
-									<span class="left"></span>
-									<span class="disable"></span>
-									<span id="mySelectText0" class="center">Cualquiera</span>
-									<a href="javascript:showOptions(2,false)" class="selectButton"></a>
-								</div>
-								<select name="" id="superficie" class="outtaHere">
-									<option value="">Alquilar</option>
-									<option value="">Cualquiera</option>
+								<select name="" id="superficie">
+									<option>Alquilar</option>
+									<option>Cualquiera</option>
+									<option>Alquilar</option>
+									<option>Cualquiera</option>
+									<option>Alquilar</option>
+									<option>Cualquiera</option>
 								</select>
 							</div>
 							<div class="row">
 								<label for="dormitorios">Dormitorios:</label>
-								<div class="selectArea" id="sarea3">
-									<span class="left"></span>
-									<span class="disable"></span>
-									<span id="mySelectText0" class="center">0</span>
-									<a href="javascript:showOptions(3,false)" class="selectButton"></a>
-								</div>
-								<select name="" id="dormitorios" class="outtaHere">
-									<option value="">0</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
+								<select id="dormitorios">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
 								</select>
 							</div>
 							<div class="row">
 								<label for="precio">Precio:</label>
-								<div class="selectArea" id="sarea4">
-									<span class="left"></span>
-									<span class="disable"></span>
-									<span id="mySelectText4" class="center">Cualquier precio</span>
-									<a href="javascript:showOptions(4,false)" class="selectButton"></a>
-								</div>
-								<select name="" id="precio" class="outtaHere">
-									<option value="">Cualquier precio</option>
-									<option value="">Cualquier precio_1</option>
+								<select id="precio">
+									<option>Cualquier precio</option>
+									<option>Cualquier precio_1</option>
 								</select>
 							</div>
 							<div class="row last-row">
 								<label for="con_fotos">Con fotos:</label>
-								<input type="checkbox" id="con_fotos" checked="checked" class="checked outtaHere" />
+								<input type="checkbox" id="con_fotos"/>
 							</div>
 							<div class="button">
 								<input type="submit" class"btn-buscar" value="buscar"/>
 							</div>
-						</fieldset>
-					</form>
+							</fieldset>
+						</form>
+					</div>
 					<div class="box">
 						<h2>destacado</h2>
 						<div class="box-image">
-							<img src="images/img-box.gif" height="80" width="110" alt="flat to rent" />
-							<input type="submit" class="btn-mas_info" value="más info" />
+							<div class="image-holder">
+								<img src="images/img-box.gif" height="80" width="110" alt="flat to rent" />
+							</div>
+							<div class="button-info">
+								<a href="#info">más info</a>
+							</div>
 						</div>
 						<div class="box-text">
 							<h3>Ático en Vigo</h3>
 							<p>50m <sup>2</sup> 1 dormitório 1 terraza amueblado sin garaje <br /> 540 euros/mes</p>
 						</div>
-
 					</div>
-				</div>
-				<!-- CONTENT -->
+			</div>
+			<!-- CONTENT -->
+			<div id="content">
 				<div class="tab" id="tab-rent">
 					<div class="heading-holder">
 						<p>inicio \</p>
@@ -188,10 +181,10 @@
 							</ul>
 						</div>
 					</div>
-					<div id="list-holder">
-						<div class="list">
+					<ul class="list-holder">
+						<li>
 							<h2>ventas en galicia</h2>
-							<ul>
+							<ul class="list">
 								<li><a href="">Venta pisos Galicia</a></li>
 								<li><a href="">Casas Bayona</a></li>
 								<li><a href="">Venta casas Galicia</a></li>
@@ -202,10 +195,10 @@
 								<li><a href="">Apartamentos en Mondariz</a></li>
 								<li><a href="">Apartamentos en Nigran</a></li>
 							</ul>
-						</div>
-						<div class="list">
+						</li>
+						<li>
 							<h2>alquileres en galicia</h2>
-							<ul>
+							<ul class="list">
 								<li><a href="">Alquiler pisos Galicia</a></li>
 								<li><a href="">Alquiler casas Galicia</a></li>
 								<li><a href="">Alquiler pisos Vigo</a></li>
@@ -216,10 +209,10 @@
 								<li><a href="">Alquiler apartamentos Vigo</a></li>
 								<li><a href="">Alquiler apartamentos Vigo</a></li>
 							</ul>
-						</div>
-						<div class="list">
+						</li>
+						<li>
 							<h2>obra nueva en galicia</h2>
-							<ul>
+							<ul class="list">
 								<li><a href="">obra nueva en galicia</a></li>
 								<li><a href="">Aticos Gondomar</a></li>
 								<li><a href="">Obra nueva en Baiona</a></li>
@@ -230,14 +223,14 @@
 								<li><a href="">Pisos Vilanova de Arousa</a></li>
 								<li><a href="">Residencial San Barlovento</a></li>
 							</ul>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 				<div class="tab" id="tab-buy">
 					<div class="heading">
 						<h1>Accordion</h1>
 					</div>
-					<div >
+					<div>
 						<ul class="simple-accordion">
 							<li class="active">
 								<a href="#" class="opener">Level 1</a>
@@ -245,10 +238,10 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sequi atque voluptatum saepe! Dignissimos laborum odit eos consectetur delectus! Rerum, consequatur non sed doloremque voluptates quis omnis quisquam explicabo commodi.</p>
 								</div>
 							</li>
 							<li class="">
@@ -288,41 +281,33 @@
 					<div class="gallery-holder">
 						<div class="gallery">
 							<div class="gholder">
-								<a href="#" class="btn-prev"><</a>
-								<a href="#" class="btn-next">></a>
+								<a href="#" class="btn-prev">&lt;</a>
+								<a href="#" class="btn-next">&gt;</a>
 								<div class="gmask-center">
 									<div class="gmask">
 										<ul>
-											<li><img src="images/for_carusel/image_1.jpg" alt="" width="640" height="427" /></li>
+											<li class="active"><img src="images/for_carusel/image_1.jpg" alt="" width="640" height="427" /></li>
 											<li><img src="images/for_carusel/image_2.jpg" alt="" width="640" height="427" /></li>
 											<li><img src="images/for_carusel/image_3.jpg" alt="" width="640" height="426" /></li>
 											<li><img src="images/for_carusel/image_4.jpg" alt="" width="640" height="427" /></li>
 											<li><img src="images/for_carusel/image_5.jpg" alt="" width="640" height="427" /></li>
+											<li><img src="images/for_carusel/image_6.jpg" alt="" width="640" height="427" /></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 							<div class="pagination">
-								<ul>
-									<li><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<div class="tab" id="tab-construction">
-					<h1></h1>
 				</div>
 			</div>
 		</div>
 		<!-- FOOTER -->
 		<div id="footer">
-			<div id="sub-nav">
+			<div class="sub-nav">
 				<ul>
 					<li><a href="#">alquilar</a></li>
 					<li><a href="#">comprar</a></li>

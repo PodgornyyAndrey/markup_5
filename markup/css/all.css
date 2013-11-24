@@ -69,13 +69,13 @@ body {
 
 #logo {
 	float: left;
+	background: url(../images/logo.png) no-repeat;
 	height: 125px;
 	width: 320px;
 	margin: 30px 0 0 30px;
 }
 
 #logo a{
-	background: url(../images/logo.png) no-repeat;
 	display: block;
 	text-indent: -9999px;
 	height: 100%;
@@ -562,4 +562,73 @@ body {
 	line-height: 16px;
 	text-align: left;
 	text-indent: 15px;
+}
+
+/*tab-sell carousel*/
+
+#tab-sell h1{
+	color: #c00;
+	text-align: center;
+	font: 26px/30px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.gallery-holder {
+	width: 100%;
+}
+
+.gallery{
+	overflow: hidden;
+}
+
+.btn-prev {
+	float: left;
+	width: 50px;
+	height: 20px;
+	background: #0a0;
+}
+
+.btn-next {
+	float: right;
+	width: 50px;
+	height: 20px;
+	background: #0a0;
+}
+
+.gmask-center:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.gmask {
+	height: 427px;
+	overflow: hidden;
+}
+
+.gmask ul {
+	height: 2135px;
+}
+
+.gmask ul li{
+	float: none;
+	width: auto !important;
+}
+
+.gmask img {
+	display: inline-block;
+}
+
+.pagination {
+	overflow: hidden;
+}
+
+.pagination ul {
+	text-align: center;
+}
+
+.pagination ul li {
+	display: inline;
 }

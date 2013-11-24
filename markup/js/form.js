@@ -21,7 +21,7 @@ function is_mac() {
 			return true;
 		}
 	}
-	
+
 	return false;
 }
 
@@ -43,7 +43,7 @@ function initCastomForms() {
 		for (var i = 0; i < _SelctClassName.length; i++) {
 			var _selectDrop = document.getElementById('optionsDiv'+i);
 			if (_selectDrop) {
-				if (_SelctClassName[i]) 
+				if (_SelctClassName[i])
 					_selectDrop.className += _SelctClassName[i];
 			}
 		}
@@ -113,7 +113,7 @@ function replaceRadios() {
 			{
 				radioLabels[q].className += "radioAreaCheckedLabel"
 			}
-			
+
 		}
 		else
 		{
@@ -156,8 +156,8 @@ function changeRadios(who) {
 		for(var q = 0; q < radios.length; q++) {
 			if(radios[q].name == radios[who].name) {
 				radios[q].checked = false;
-			} 
-			radios[who].checked = true; 
+			}
+			radios[who].checked = true;
 			checkRadios(who);
 		}
 	}
@@ -168,9 +168,9 @@ function rechangeRadios(who) {
 	if(!radios[who].checked) {
 		for(var q = 0; q < radios.length; q++) {
 			if(radios[q].name == radios[who].name)	{
-				radios[q].checked = false; 
+				radios[q].checked = false;
 			}
-			radios[who].checked = true; 
+			radios[who].checked = true;
 			checkRadios(who);
 		}
 	}
@@ -197,7 +197,7 @@ function replaceCheckboxes() {
 		{
 			checkboxLabels[q].onclick = new Function('changeCheckboxes('+q+')');
 		}
-		
+
 		checkboxes[q].onkeydown = checkEvent;
 	}
 	return true;
@@ -227,7 +227,7 @@ function changeCheckboxes(who) {
 	}
 	else {
 		checkCheckboxes(who, true);
-	} 
+	}
 }
 
 //rechanging checkboxes
@@ -260,17 +260,17 @@ function replaceSelects() {
 		var left = document.createElement("span");
 		left.className = "left";
 		selectArea.appendChild(left);
-		
+
 		var disabled = document.createElement("span");
 		disabled.className = "disabled";
 		selectArea.appendChild(disabled);
-		
+
 		selects[q]._disabled = disabled;
 		var center = document.createElement("span");
 		var button = document.createElement("a");
 		var text = document.createTextNode(selectText);
 		center.id = "mySelectText"+q;
-		
+
 		var stWidth = selects[q].offsetWidth;
 		selectArea.style.width = stWidth + "px";
 		if (selects[q].parentNode.className.indexOf("type2") != -1){
@@ -287,7 +287,7 @@ function replaceSelects() {
 		center.appendChild(text);
 		selectArea.appendChild(center);
 		selectArea.appendChild(button);
-		
+
 		//hide the select field
 		selects[q].className += " outtaHere";
 		//insert select div
@@ -304,16 +304,16 @@ function replaceSelects() {
 		optionsListParent.appendChild(optionsListParent2);
 		optionsListParent.appendChild(optionsList);
 		optionsDiv.appendChild(optionsListParent);
-		
+
 		selects[q]._options = optionsList;
-		
+
 		optionsDiv.style.width = stWidth + "px";
 		optionsDiv._parent = selectArea;
-		
+
 		optionsDiv.className = "optionsDivInvisible";
 		optionsDiv.id = "optionsDiv"+q;
-		
-	
+
+
 		populateSelectOptions(selects[q]);
 		optionsDiv.innerHTML += "<div class='select-bottom'><div class='select-bottom-left'></div><div class='select-bottom-right'></div></div>";
 		document.getElementsByTagName("body")[0].appendChild(optionsDiv);
@@ -326,7 +326,7 @@ function replaceSelects() {
 //collecting select options
 function populateSelectOptions(me) {
 	me._options.innerHTML = "";
-	
+
 	for(var w = 0; w < me.options.length; w++) {
 		if(me.options[w].title.indexOf("title") == -1) {
 			var optionHolder = document.createElement('li');
@@ -340,7 +340,7 @@ function populateSelectOptions(me) {
 			} else {
 				optionTxt = document.createTextNode(me.options[w].text);
 			}
-			
+
 			optionLink.href = "javascript:showOptions("+me._number+"); selectMe('"+me.id+"',"+w+","+me._number+");";
 			if (me.options[w].title.indexOf('image') != -1) {
 				optionLink.appendChild(optionTxt);
@@ -377,7 +377,7 @@ function selectMe(selectFieldId,linkNo,selectNo) {
 			selectField.options[k].selected = false;
 		}
 	}
-	
+
 	//show selected option
 	textVar = document.getElementById("mySelectText"+selectNo);
 	var newText;
@@ -392,11 +392,11 @@ function selectMe(selectFieldId,linkNo,selectNo) {
 	}
 	if (selectField.options[linkNo].title.indexOf('image') != -1) {
 		if (textVar.childNodes.length > 1) textVar.removeChild(textVar.childNodes[0]);
-		textVar.replaceChild(newText, textVar.childNodes[0]);	
-		textVar.appendChild(optionSpan);	
+		textVar.replaceChild(newText, textVar.childNodes[0]);
+		textVar.appendChild(optionSpan);
 	} else {
 		if (textVar.childNodes.length > 1) textVar.removeChild(textVar.childNodes[0]);
-		textVar.replaceChild(newText, textVar.childNodes[0]);	
+		textVar.replaceChild(newText, textVar.childNodes[0]);
 	}
 	if (selectField.onchange && all_selects)
 		{
@@ -424,7 +424,7 @@ function showOptions(g) {
 			_elem.style.left = findPosX(divArea) + 'px';
 			divArea.className += ' selectAreaActive';
 			_active = divArea;
-			
+
 			active_select = _elem;
 			if(document.documentElement)
 			{
@@ -441,7 +441,7 @@ function showOptions(g) {
 			_elem.className += " optionsDivInvisible";
 			divArea.className = divArea.className.replace('selectAreaActive','');
 		}
-		
+
 		// for mouseout
 		/*_elem.timer = false;
 		_elem.onmouseover = function() {
@@ -486,13 +486,13 @@ function hideSelectOptions(e)
 
 function isElementBefore(_el,_class)
 {
-	var _parent = _el;	
+	var _parent = _el;
 	do
 	{
 		_parent = _parent.parentNode;
 	}
 	while(_parent && _parent.className != null && _parent.className.indexOf(_class) == -1)
-	
+
 	if(_parent.className && _parent.className.indexOf(_class) != -1)
 	{
 		return 1;
@@ -501,7 +501,7 @@ function isElementBefore(_el,_class)
 	{
 		return 0;
 	}
-	
+
 }
 
 function findPosY(obj) {
